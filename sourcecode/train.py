@@ -94,7 +94,7 @@ def parse_arguments():
                         help="latent size for the generator")
 
     parser.add_argument("--batch_size", action="store", type=int,
-                        default=20,
+                        default=32,
                         help="batch_size for training")
 
     parser.add_argument("--start", action="store", type=int,
@@ -110,7 +110,7 @@ def parse_arguments():
                         help="number of logs to generate per epoch")
 
     parser.add_argument("--num_samples", action="store", type=int,
-                        default=18,
+                        default=36,
                         help="number of samples to generate for creating the grid" +
                              " should be a square number preferably")
 
