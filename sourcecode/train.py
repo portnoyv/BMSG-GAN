@@ -115,7 +115,7 @@ def parse_arguments():
                              " should be a square number preferably")
 
     parser.add_argument("--checkpoint_factor", action="store", type=int,
-                        default=1,
+                        default=10,
                         help="save model per n epochs")
 
     parser.add_argument("--g_lr", action="store", type=float,
