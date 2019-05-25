@@ -54,7 +54,8 @@ def parse_arguments():
 
     parser.add_argument("--images_dir", action="store", type=str,
                         # default="../data/celeba",
-                        default=os.environ['SM_CHANNEL_TRAINING'],
+                        # default=os.environ['SM_CHANNEL_TRAINING'],
+                        default='/content/drive/My Drive/DL_Indigo/Space/'
                         help="path for the images directory")
 
     parser.add_argument("--folder_distributed", action="store", type=bool,
@@ -67,12 +68,14 @@ def parse_arguments():
 
     parser.add_argument("--sample_dir", action="store", type=str,
                         # default="samples/1/",
-                        default=os.environ['SM_MODEL_DIR'],
+                        # default=os.environ['SM_MODEL_DIR'],
+                        default='/content/drive/My Drive/DL_Indigo/Models/Samples/'
                         help="path for the generated samples directory")
 
     parser.add_argument("--model_dir", action="store", type=str,
                         # default="models/1/",
-                        default=os.environ['SM_MODEL_DIR'],
+                        # default=os.environ['SM_MODEL_DIR'],
+                        default='/content/drive/My Drive/DL_Indigo/Models/Models/'
                         help="path for saved models directory")
 
     parser.add_argument("--loss_function", action="store", type=str,
@@ -83,7 +86,7 @@ def parse_arguments():
                              "hinge, relativistic-hinge")
 
     parser.add_argument("--depth", action="store", type=int,
-                        default=6,
+                        default=8,
                         help="Depth of the GAN")
 
     parser.add_argument("--latent_size", action="store", type=int,
