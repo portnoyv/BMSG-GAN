@@ -110,7 +110,7 @@ def parse_arguments():
                         help="number of logs to generate per epoch")
 
     parser.add_argument("--num_samples", action="store", type=int,
-                        default=36,
+                        default=18,
                         help="number of samples to generate for creating the grid" +
                              " should be a square number preferably")
 
@@ -151,7 +151,7 @@ def parse_arguments():
                         help="percentage of data to use")
 
     parser.add_argument("--num_workers", action="store", type=int,
-                        default=3,
+                        default=1,
                         help="number of parallel workers for reading files")
 
     args = parser.parse_args()
