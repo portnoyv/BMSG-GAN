@@ -55,7 +55,7 @@ def parse_arguments():
     parser.add_argument("--images_dir", action="store", type=str,
                         # default="../data/celeba",
                         # default=os.environ['SM_CHANNEL_TRAINING'],
-                        default='/content/drive/My Drive/DL_Indigo/Space/Folder/',
+                        default='/content/drive/My Drive/DL_Indigo/Melting/Folder/',
                         help="path for the images directory")
 
     parser.add_argument("--folder_distributed", action="store", type=bool,
